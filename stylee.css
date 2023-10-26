@@ -1,0 +1,43 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #001f3f; /* Dark Blue Background Color */
+    color: #fff; /* White Text Color */
+    margin: 0;
+    padding: 0;
+}
+
+.ComplainList {
+    max-width: 800px;
+    margin: 50px auto;
+    background-color: #0d3c5d; /* Slightly Darker Blue Background Color */
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    color: #336699; /* Slightly Lighter Blue Text Color */
+}
+
+.error-item {
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 3px;
+}
+
+.error-item h2 {
+    color: #001f3f; /* Dark Blue Text Color */
+}
+table {
+    width: 100%;
+    border-collapse: collapse; 
+  }
+  
+  th, td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: left;
+  }
+  
+  th {
+    background-color: #718491;
+  }
+  

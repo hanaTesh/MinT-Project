@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script>
+        function submitForm() {
+          // Prevent the default form submission behavior
+          event.preventDefault();
+        
+          // Display a pop-up message
+          alert("Your form has been submitted!");
+          
+          // Submit the form using JavaScript
+          document.getElementById("myForm").submit();
+        }
+      </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fancy User Registration</title>
+    <style>
+        body {
+            background-image: linear-gradient(to right, rgba(55, 54, 109, 0.562), rgb(231, 218, 218), rgba(55, 54, 109, 0.562));
+            height: 100vh;
+            font-family: Arial;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container {
+            display: flex;
+            align-items: center;
+            background-color: rgb(105, 156, 173);
+            padding: 30px;
+            box-shadow: 0 50px 50px -50px darkslategray;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 270px;
+            margin-right: 20px; /* Adjust the margin as needed */
+        }
+
+        form label {
+            color: rgb(27, 8, 92);
+            margin-bottom: 10px;
+        }
+
+        form input {
+            border: none;
+            outline: none;
+            border-radius: 0;
+            width: 100%;
+            border-bottom: 2px solid black;
+            margin-bottom: 20px;
+            padding: 7px 0;
+            font-size: 14px;
+        }
+
+        form button {
+            color: white;
+            background-color: rgb(22, 189, 44);
+            border: none;
+            border-radius: 2px;
+            font-size: 14px;
+            padding: 5px 12px;
+            font-weight: 500;
+            cursor: pointer;
+        }
+
+        img {
+            max-height: 100%; /* Set the max-height to match the height of the registration form */
+            width: auto;
+            margin-left: 20px; /* Adjust the margin as needed */
+        }
+
+        #logo {
+            max-width: 200px; /* Increase the max-width for a larger logo */
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <form action="registration.php" method="post">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="name" required>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+            <button type="submit" value="Submit" onclick="submitForm()">Register</button>
+
+          
+        </form>
+        
+        <img id="logo" src="image/m.jpg"  alt="Logo">
+    </div>
+
+</body>
+</html>

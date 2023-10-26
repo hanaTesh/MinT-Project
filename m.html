@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Device Problem Submission</title>
+    <title>Device Problem Submission</title>
+    <script>
+      function submitForm() {
+        // Prevent the default form submission behavior
+        event.preventDefault();
+      
+        // Display a pop-up message
+        alert("Your form has been submitted!");
+        
+        // Submit the form using JavaScript
+        document.getElementById("myForm").submit();
+      }
+    </script>
+    <style>
+      body {
+        background-image: linear-gradient(rgba(13, 11, 81, 0.562), rgba(251, 251, 254, 0.562),rgba(13, 11, 81, 0.562)) ;
+        font-family: Arial;
+      }
+      label {
+        display: block;
+        margin-top: 10px;
+      }
+      input[type="text"],
+      input[type="email"],
+      textarea {
+        resize: none;
+        width: 40%;
+        padding: 15px;
+        margin-top: 5px;
+        border: none;
+        border-radius: 5px;
+        font-size: 14px;
+      }
+      button[type="submit"],
+      input[type="reset"] {
+        background-color: #4caf50;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        margin-right: 10px;
+      }
+      textarea{
+        height: 8rem;
+      }
+      select{
+        width: 42%;
+        resize: none;
+        padding: 15px;
+        border: none;
+        margin-top: 5px;
+        border-radius: 5px;
+        font-size: 14px;
+      }
+      img {
+         float:right; 
+        border-radius: 10px;
+        margin-right: 100px;
+        width: 580px;
+        position: absolute;
+        top: 45%;
+        right: 2rem;
+        transform: translateY(-50%);
+      }
+    
+    </style>
+  </head>
+  <body>
+    <div>
+      <h1>Device Problem Submission</h1>
+      <form method="POST" action="p.php">
+
+        <label>Name:</label>
+        <input type="text" name="name" placeholder="Enter your name" required>
+      
+        <label>Email or Phone Number:</label> 
+        <input type="email" name="email" placeholder="Enter your email or phone number" required>
+      
+        <label>Device Name:</label>
+        <input type="text" name="device" placeholder="Enter device name" required>
+
+        
+        <label>Department:</label>
+        <select name="department" required>
+          <option value="">Select a department</option>
+          <option value="dept1">dept1</option>
+          <option value="dept2">dept2</option>
+          <option value="dept3">dept3</option>
+          <option value="dept4">dept4</option>
+        </select>
+        <label>Problem:</label>
+        <textarea id="problem" name="problem"  placeholder="Enter the problem"></textarea><br>
+        
+        <button type="submit" value="Submit" onclick="submitForm()">Submit</button>
+        <input type="reset" value="Cancel">
+      
+      
+      <img src="image/m.jpg" id="image" alt="Image description" >
+  </form>
+  
+  
+    </div>
+
+  </body>
+</html>
